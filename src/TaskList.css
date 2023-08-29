@@ -1,0 +1,116 @@
+.task-list {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.task {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f5f5f5; /* Fondo de color para cada tarea */
+}
+
+.task-checkbox {
+  margin-right: 10px;
+}
+
+.task-text {
+  flex-grow: 1;
+  max-width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.task-buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.task-buttons button {
+  padding: 5px 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.task-buttons button:hover {
+  background-color: #0056b3;
+}
+
+/* TaskList.css */
+.task-edit-textarea {
+  width: 100%;
+  max-height: 100%;
+  font-size: 16px;
+  padding: 5px;
+  resize: vertical; /* Permite que el textarea se redimensione verticalmente */
+}
+
+.button-add {
+  padding: 5px 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.input-add {
+  width: 30%;
+}
+
+/* Estilos para el modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.modal textarea {
+  width: 100%;
+  height: 300px; /* Ajusta la altura según tus preferencias */
+  padding: 5px;
+  font-size: 16px;
+  resize: vertical; /* Permite ajustar la altura verticalmente */
+  margin-bottom: 10px;
+}
+
+.modal button {
+  padding: 5px 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.modal button:last-child {
+  margin-right: 0; /* Evita el margen derecho en el último botón */
+}
+
+.modal button:hover {
+  background-color: #0056b3;
+}
